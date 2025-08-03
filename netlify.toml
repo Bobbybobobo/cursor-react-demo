@@ -1,9 +1,9 @@
 [build]
   # 构建命令
-  command = "npm run generate"
+  command = "npm run build"
   
   # 发布目录
-  publish = "dist"
+  publish = "build"
   
   # Node.js版本
   [build.environment]
@@ -29,4 +29,5 @@
 [[headers]]
   for = "/*.css"
   [headers.values]
+
     Cache-Control = "public, max-age=31536000, immutable" 
